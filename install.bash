@@ -20,8 +20,13 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
 
 5.Start
-minikube start --driver=virtualbox --no-vtx-check
-kubectl api-versions
+Usage
+Start a cluster using the docker driver:
+
+minikube start --driver=docker
+To make docker the default driver:
+
+minikube config set driver docker
 
 6. How to Enable Nested VT-X/AMD-V in Virtualbox
 C:\>cd "Program Files\Oracle\VirtualBox"
